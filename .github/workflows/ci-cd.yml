@@ -32,7 +32,7 @@ jobs:
           GIT_TOKEN: ${{ secrets.GITOPS_PAT }}
         run: |
           # Configure git credential store
-          git config --global --replace-all credential.helper store
+          git config --global credential.helper store
           echo "https://${GIT_TOKEN}:x-oauth-basic@github.com" > ~/.git-credentials
           
           # Remove any existing gitops directory
