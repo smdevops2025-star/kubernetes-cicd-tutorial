@@ -55,4 +55,4 @@ jobs:
           git commit -m "Update image to ${{ github.sha }}"
           
           # Push
-          git push -f https://${GIT_TOKEN}@github.com/smdevops2025-star/grade-api-gitops.git main
+          git push -f https://${GIT_TOKEN}@github.com/smdevops2025-star/kubernetes-cicd-tutorial.git main
