@@ -6,7 +6,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-
 let grades = [];
 
 app.get('/grades', (req, res) => {
